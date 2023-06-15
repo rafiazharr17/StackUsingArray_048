@@ -29,7 +29,7 @@ public:
 	}
 
 	bool empty() { 
-		return (top == 1);
+		return (top == -1);
 	}
 
 	void pop() {
@@ -60,7 +60,7 @@ int main() {
 
 	while (true) {
 		cout << endl;
-		cout << "\n***Stack Menu***";
+		cout << "\n***Stack Menu***" << endl;
 		cout << "1. Push\n";
 		cout << "2. Pop\n" ;
 		cout << "3. Display\n";
