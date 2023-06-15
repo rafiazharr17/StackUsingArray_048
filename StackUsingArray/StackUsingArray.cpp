@@ -71,12 +71,21 @@ int main() {
 		char ch = (input.empty() ? '0' : input[0]);
 		switch (ch)
 		{
-		case '1':
-			s.push();
-			break;
-		case '2':
+		case '1': {
+				cout << "Enter an Element : ";
+				string element; 
+				getline(cin, element);
+				s.push(element);
+				break;
+		}
+		case '2': {
+			if (s.empty()) { 
+				cout << "\nStack is empty." << endl;
+				break;
+			}
 			s.pop();
 			break;
+		}
 		case '3':
 			s.display();
 			break;
@@ -87,4 +96,4 @@ int main() {
 			break;
 		}
 	}
-}
+} 
