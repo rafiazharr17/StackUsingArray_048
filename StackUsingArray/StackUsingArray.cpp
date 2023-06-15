@@ -58,5 +58,33 @@ public:
 int main() {
 	program s;
 
-	
+	while (true) {
+		cout << endl;
+		cout << "\n***Stack Menu***" << endl;
+		cout << "1. Push\n" << endl;
+		cout << "2. Pop\n" << endl;
+		cout << "3. Display\n" << endl;
+		cout << "4. Exit\n" << endl;
+		cout << "\nEnter your choice (1-4) : ";
+		string input;
+		getline(cin, input);
+		char ch = (input.empty() ? '0' : input[0]);
+		switch (ch)
+		{
+		case '1':
+			s.push();
+			break;
+		case '2':
+			s.pop();
+			break;
+		case '3':
+			s.display();
+			break;
+		case '4':
+			return 0;
+		default:
+			cout << "\nInvalid option" << endl;
+			break;
+		}
+	}
 }
