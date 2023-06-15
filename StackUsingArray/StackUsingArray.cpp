@@ -60,11 +60,11 @@ int main() {
 
 	while (true) {
 		cout << endl;
-		cout << "\n***Stack Menu***" << endl;
-		cout << "1. Push\n" << endl;
-		cout << "2. Pop\n" << endl;
-		cout << "3. Display\n" << endl;
-		cout << "4. Exit\n" << endl;
+		cout << "\n***Stack Menu***";
+		cout << "1. Push\n";
+		cout << "2. Pop\n" ;
+		cout << "3. Display\n";
+		cout << "4. Exit\n";
 		cout << "\nEnter your choice (1-4) : ";
 		string input;
 		getline(cin, input);
