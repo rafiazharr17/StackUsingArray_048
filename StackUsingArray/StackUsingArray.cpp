@@ -8,5 +8,9 @@ private:
 	int top;
 
 public:
+	program() {
+		top = -1;
+	}
+
 	
 };
